@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
-//  Project1
+//  Tips.swift
+//  IOSDev
 //
-//  Created by Adam El-Telbani on 2/19/25.
+//  Created by Adam El-Telbani on 2/26/25.
 //
 
 
 import SwiftUI
 
-struct ContentView: View {
+struct Tips: View {
     @State private var billAmount = ""
     @State private var tipPercentage = 15.0
     @State private var numberOfPeople = 2
@@ -33,9 +33,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                
-                NavigationLink(destination: Flags()) {
-                    Text("Guess the Flag")}
                 
                 Section(header: Text("Bill Amount")) {
                     TextField("Amount", text: $billAmount)
@@ -83,8 +80,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Tips_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Tips()
     }
 }

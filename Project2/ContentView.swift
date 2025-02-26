@@ -33,10 +33,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                
-                NavigationLink(destination: Flags()) {
-                    Text("Guess the Flag")}
-                
                 Section(header: Text("Bill Amount")) {
                     TextField("Amount", text: $billAmount)
                         .keyboardType(.decimalPad)
